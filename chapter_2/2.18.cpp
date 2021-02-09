@@ -1,19 +1,25 @@
 #include <iostream>
 
+using namespace std;
+
 int main () 
 {
-    int val1 = 42, *p1 = &val1;
-    int val2 = 100;
-    std::cout << "val1 = " << val1 << '\n'
-        << "*p1 = " << *p1 << '\n'
-        << "p1 = " << p1 << '\n'
-        << "val2 = " << val2 << '\n' << '\n';
-    p1 = &val2;
-    std::cout << "*p1 = " << *p1 << '\n'
-        << "p1 = " << p1 << '\n' << '\n';
-    *p1 = 64;
-    std:: cout << "val2 = " << val2 << '\n'
-        << "*p1 = " << *p1 << '\n'
-        << "p1 = " << p1 << '\n';
-    return 0;
+    int i = 42, *p = &i;
+    int j = 69;
+    cout << "i = " << i << " " << endl;
+    cout << "j = " << j << " " << endl;
+    cout << "p = " << p << " " << endl;
+    cout << "*p = " << *p << " " << endl;
+
+    cout << "Change..." << endl;
+
+    p = &j;
+    
+    cout << "p = " << p << " " << endl;
+    cout << "*p = " << *p << " " << endl;
+
+    cout << "Now change the g value..." << endl;
+    *p = 100500;
+    cout << "j = " << j << " " << endl;
+
 }

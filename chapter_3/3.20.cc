@@ -16,9 +16,9 @@ int main()
       numbers.push_back(num);
   }
   
-  //for(decltype(numbers.size()) i = 0; i < numbers.size(); i=i+2) {
-   //   cout << numbers[i] + numbers[i+1] << endl;
-  //}
+//  for(decltype(numbers.size()) i = 0; i < numbers.size(); i=i+2) {
+//      cout << numbers[i] + numbers[i+1] << endl;
+//  }
   
   for(decltype(numbers.size()) i = 0; i < (numbers.size()) / 2; ++i) {
       cout << numbers[i] + numbers[numbers.size() - (i+1)] << endl;

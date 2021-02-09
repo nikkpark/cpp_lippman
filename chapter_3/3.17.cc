@@ -30,10 +30,11 @@ int main()
   cout << endl;
   
   for(decltype(text.size()) i = 0; i != text.size(); ++i) {
-      if(i % 9 == 0) {
+      cout << i % 7 << endl;
+      if(i % 7 == 0) {
           cout << endl;
       }
-      else{
+      else {
           cout << text[i] << " ";
       }
   }

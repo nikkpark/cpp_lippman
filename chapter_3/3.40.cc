@@ -14,6 +14,6 @@ int main ()
   for (auto &i : c3)
     cout << i;
   cout << endl;
-  cout << strlen(c3);
+  cout << strlen(c3) << endl;
   return 0;
 }
